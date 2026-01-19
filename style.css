@@ -1,0 +1,40 @@
+body {
+font-family: Arial;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+background: lightblue;
+padding: 10px;
+}
+
+nav a {
+margin: 10px;
+text-decoration: none;
+}
+
+nav a:hover {
+font-weight: bold;
+text-decoration: underline;
+}
+
+.skill {
+display: inline-block;
+margin: 10px;
+text-align: center;
+}
+
+.popup {
+display: none;
+background: green;
+color: white;
+padding: 10px;
+}
+
+.home {
+width: 40px;
+position: fixed;
+bottom: 10px;
+right: 10px;
+}
