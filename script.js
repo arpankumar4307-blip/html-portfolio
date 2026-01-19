@@ -1,19 +1,26 @@
-function addRec() {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener("click", function (e) {
+e.preventDefault()
 
-var text = document.getElementById("newRec").value
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+behavior: "smooth"
+})
+})
+})
 
-var div = document.getElementById("rec-list")
 
-var p = document.createElement("p")
+let mybutton = document.getElementById("topBtn")
 
-p.innerHTML = text
+window.onscroll = function() {scrollFunction()}
 
-div.appendChild(p)
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+mybutton.style.display = "block"
+} else {
+mybutton.style.display = "none"
+}
+}
 
-document.getElementById("popup").style.display = "block"
-
-setTimeout(function() {
-document.getElementById("popup").style.display = "none"
-}, 2000)
-
+function topFunction() {
+window.scrollTo({top: 0, behavior: 'smooth'})
 }
