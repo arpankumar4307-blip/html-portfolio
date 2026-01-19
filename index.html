@@ -1,21 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARPAN KUMAR portfolio</title>
+<title>Arpan Kumar Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <h1>ARPAN KUMAR portfolio</h1>
-  <h2>I'm a Web Developer</h2>
-  <hr />
-  <h3><a href="../html-portfolio/projects/movie-ranking.html">Movie Ranking Project a></h3>
-  <img src="./images/movie-ranking.jpg""./" height="200" alt="movie ranking project preview"/>
-  <h3><a href="./projects/birthday-invite.html">Birthday Invite Project</a></h3>
-  <img src="./images/birthday-invite.png" height="200" alt="birthday invite project preview"/>
-  <hr />
-  <a href="./about.html">About Me</a>
-  <a href="./contact.html">Contact Me</a>
+
+<header>
+<div class="name">Arpan Kumar</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Project details</a>
+<a href="#skills">Skills</a>
+<a href="#recommendations">Recommendations</a>
+</nav>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<img src="images/profile.png">
+<p>
+I am a passionate learner of full stack development and data analytics
+</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+
+<div class="skill">
+<img src="images/skill1.png">
+<p>HTML</p>
+</div>
+
+<div class="skill">
+<img src="images/skill2.png">
+<p>CSS</p>
+</div>
+
+<div class="skill">
+<img src="images/skill3.png">
+<p>JavaScript</p>
+</div>
+
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<ul>
+<li>Portfolio Website</li>
+<li>To Do App</li>
+<li>Calculator</li>
+</ul>
+</section>
+
+<section id="recommendations">
+
+<h2>Recommendations</h2>
+
+<div id="rec-list">
+<p>Great developer</p>
+<p>Very hardworking</p>
+<p>Good problem solver</p>
+</div>
+
+<textarea id="newRec"></textarea>
+<button onclick="addRec()">Add Recommendation</button>
+
+</section>
+
+<div id="popup" class="popup">
+Thank you for leaving a recommendation
+</div>
+
+<a href="#top">
+<img class="home" src="images/home.png">
+</a>
+
+<script src="script.js"></script>
+
 </body>
 </html>
-
