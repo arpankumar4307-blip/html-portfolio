@@ -1,208 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 <title>Arpan Kumar Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
 </head>
 
 <body>
 
-<header>
-<div class="name">Arpan Kumar</div>
 
-<nav>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#certifications">Certifications</a>
-<a href="#recommendations">Recommendations</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#">Arpan Kumar</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
 </nav>
 
-</header>
 
-<section id="about">
+
+<section class="hero d-flex flex-column justify-content-center align-items-center text-center">
+
+<h1>Arpan Kumar</h1>
+
+<p>Aspiring Full Stack Developer and Data Analyst</p>
+
+<a href="#projects" class="btn btn-primary">View My Work</a>
+
+</section>
+
+
+
+<section id="about" class="container text-center my-5">
+
 <h2>About Me</h2>
-<img src="images/profile.png">
+
 <p>
-I am a passionate learner of full stack development and data analytics
+I am a passionate learner of Full Stack Development and Data Analytics  
+I have completed IBM Data Analytics IBM Full Stack Development and Advanced Data Analytics certifications  
+I build real world projects using HTML CSS JavaScript Python and SQL
 </p>
-</section>
-
-
-<section id="skills">
-
-<h2>Technical Skills</h2>
-
-<h3>Front-End Web Development</h3>
-<ul>
-<li>HTML 5</li>
-<li>CSS 3</li>
-<li>Flexbox</li>
-<li>Grid</li>
-<li>Bootstrap 5</li>
-<li>JavaScript ES6</li>
-<li>DOM Manipulation</li>
-<li>jQuery</li>
-<li>React.js</li>
-<li>React Hooks</li>
-</ul>
-
-<h3>Backend Web Development</h3>
-<ul>
-<li>Node.js</li>
-<li>NPM</li>
-<li>Express.js</li>
-<li>EJS</li>
-<li>REST APIs</li>
-<li>Authentication</li>
-</ul>
-
-<h3>Databases & Tools</h3>
-<ul>
-<li>SQL</li>
-<li>PostgreSQL</li>
-<li>Git and GitHub</li>
-<li>Bash Command Line</li>
-<li>Version Control</li>
-</ul>
-
-<h3>Web Design & Deployment</h3>
-<ul>
-<li>Responsive Web Design</li>
-<li>Deployment with GitHub Pages</li>
-</ul>
-
-<h3>Web3 Development</h3>
-<ul>
-<li>Blockchain Technology</li>
-<li>Token Contract Development</li>
-<li>NFT Minting Buying and Selling Logic</li>
-</ul>
-
-<h3>Data Analytics & AI</h3>
-<ul>
-<li>Python for Data Analysis</li>
-<li>Statistics</li>
-<li>Exploratory Data Analysis</li>
-<li>Generative AI</li>
-<li>Excel</li>
-<li>Power BI</li>
-<li>Tableau</li>
-<li>ETL Processes</li>
-<li>Snowflake</li>
-<li>AWS Basics</li>
-<li>Feature Engineering</li>
-</ul>
 
 </section>
 
 
-<section id="projects">
 
-<h2>Projects</h2>
+<section id="skills" class="container my-5">
 
-<ul>
+<h2 class="text-center">Technical Skills</h2>
 
-<li>
-<h3>Birthday Invite Project</h3>
+<div class="row text-center">
 
-<a href="projects/birthday-invite.html" target="_blank">
-<img src="images/birthday-invite.png" width="300">
+<div class="col-md-4">
+<h4>Frontend</h4>
+<p>HTML5 CSS3 JavaScript Bootstrap React</p>
+</div>
+
+<div class="col-md-4">
+<h4>Backend</h4>
+<p>Node JS Express REST APIs</p>
+</div>
+
+<div class="col-md-4">
+<h4>Data Analytics</h4>
+<p>Python Excel Power BI Tableau SQL</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="projects" class="container my-5">
+
+<h2 class="text-center mb-4">Projects</h2>
+
+<div class="row d-flex justify-content-center">
+
+
+
+<div class="col-md-5 project-card">
+
+<div class="card">
+
+<img src="images/birthday-invite.png" class="card-img-top">
+
+<div class="card-body">
+
+<h5 class="card-title">Birthday Invite Project</h5>
+
+<p class="card-text">Simple HTML based invitation project</p>
+
+<a href="projects/birthday-invite.html" target="_blank" class="btn btn-success">
+View Project
 </a>
 
-<p>
-<a href="projects/birthday-invite.html" target="_blank">Open Project</a>
-</p>
-</li>
+</div>
+</div>
+</div>
 
 
-<li>
-<h3>Movie Ranking Project</h3>
 
-<a href="projects/movie-ranking.html" target="_blank">
-<img src="images/movie-ranking.jpg" width="300">
+
+<div class="col-md-5 project-card">
+
+<div class="card">
+
+<img src="images/movie-ranking.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<h5 class="card-title">Movie Ranking Project</h5>
+
+<p class="card-text">Basic HTML project showing movie rankings</p>
+
+<a href="projects/movie-ranking.html" target="_blank" class="btn btn-success">
+View Project
 </a>
 
-<p>
-<a href="projects/movie-ranking.html" target="_blank">Open Project</a>
-</p>
-</li>
+</div>
+</div>
+</div>
 
-
-<li>
-<h3>Calculator Project</h3>
-<p>Project coming soon</p>
-</li>
-
-</ul>
+</div>
 
 </section>
 
 
-<section id="certifications">
+
+
+<section id="certifications" class="container text-center my-5">
 
 <h2>Certifications & Badges</h2>
 
 <ul>
-
 <li>IBM Full Stack Developer Professional Certificate</li>
-
 <li>IBM Data Analytics Professional Certificate</li>
-
 <li>Google Advanced Data Analytics Certificate</li>
-
 <li>Udemy Full Stack Development Bootcamp</li>
-
 </ul>
 
-<p>
-I am Arpan Kumar a passionate learner and aspiring Full Stack Developer and Data Analyst I have completed IBM Data Analytics IBM Full Stack Development and Google Advanced Data Analytics certifications I build real world projects using HTML CSS JavaScript Python and SQL and continuously improve my skills through hands on practice
-</p>
-
-<p>
-View my IBM Badges on Credly:
-</p>
-
-<a href="https://www.credly.com/badges/e7f26991-c085-48a9-a04f-c1a1c76caecc" target="_blank">
-IBM Professional Badge
+<a href="https://www.credly.com/badges/e7f26991-c085-48a9-a04f-c1a1c76caecc" target="_blank" class="btn btn-primary">
+View IBM Badge
 </a>
 
 </section>
 
 
-<section id="recommendations">
 
-<h2>Recommendations</h2>
 
-<div id="rec-list">
-<p>Great developer</p>
-<p>Very hardworking</p>
-<p>Good problem solver</p>
-</div>
+<section id="contact" class="container text-center my-5">
 
-<textarea id="newRec"></textarea>
-<button onclick="addRec()">Add Recommendation</button>
+<h2>Contact Me</h2>
+
+<p>Email arpankumar@example com</p>
+
+<p>
+<a href="https://github.com/arpankumar4307-blip" target="_blank">GitHub Profile</a>
+</p>
 
 </section>
 
 
-<div id="popup" class="popup">
-Thank you for leaving a recommendation
-</div>
 
-<a href="#top">
-<img class="home" src="images/home.png">
-</a>
+<footer class="text-center bg-dark text-white p-3">
+Copyright 2025 Arpan Kumar
+</footer>
+
+
+
+<button onclick="topFunction()" id="topBtn">Top</button>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="script.js"></script>
 
 </body>
-  <div class="container mx-auto p-4 font-[Poppins]">
-
 </html>
