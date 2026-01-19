@@ -35,3 +35,6 @@ background: black;
 color: white;
 border: none;
 }
+.hero .btn {
+margin-top: 10px;
+}
