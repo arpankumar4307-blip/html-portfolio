@@ -1,29 +1,41 @@
+/* Smooth Scrolling for Navbar Links */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener("click", function (e) {
-e.preventDefault()
+  anchor.addEventListener("click", function (e) {
 
-document.querySelector(this.getAttribute("href")).scrollIntoView({
-behavior: "smooth"
-})
-})
-})
+    const target = document.querySelector(this.getAttribute("href"));
+
+    if (target) {
+      e.preventDefault();
+
+      target.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  });
+});
 
 
-let mybutton = document.getElementById("topBtn")
+/* Back to Top Button Functionality */
+let mybutton = document.getElementById("topBtn");
 
-window.onscroll = function() {scrollFunction()}
+window.onscroll = function() {
+  scrollFunction();
+};
 
 function scrollFunction() {
-if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-mybutton.style.display = "block"
-} else {
-mybutton.style.display = "none"
-}
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
 
 function topFunction() {
-window.scrollTo({top: 0, behavior: 'smooth'})
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+
+/* Recommendation Dialog Functions */
 function openDialog() {
   document.getElementById("dialog").style.display = "block";
 }
@@ -32,12 +44,14 @@ function closeDialog() {
   document.getElementById("dialog").style.display = "none";
 }
 
+
+/* Add New Recommendation Function */
 function addRec() {
 
   var text = document.getElementById("newRec").value;
 
-  if(text.trim() == "") {
-    alert("Please write something");
+  if (text.trim() == "") {
+    alert("Please write something before submitting");
     return;
   }
 
@@ -53,10 +67,13 @@ function addRec() {
 
   document.getElementById("dialog").style.display = "none";
 
-  document.getElementById("popup").style.display = "block";
+  /* Show Popup Message */
+  var popup = document.getElementById("popup");
+
+  popup.style.display = "block";
 
   setTimeout(function() {
-    document.getElementById("popup").style.display = "none";
+    popup.style.display = "none";
   }, 2000);
 
 }
